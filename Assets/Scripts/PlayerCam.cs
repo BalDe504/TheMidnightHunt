@@ -7,6 +7,9 @@ public class PlayerCam : MonoBehaviour
     public float sensX;
     public float sensY;
 
+    public KeyCode leftLook = KeyCode.Q;
+    public KeyCode rightLook = KeyCode.E;
+
     public Transform orientation;
 
     float xRotation;
@@ -29,9 +32,32 @@ public class PlayerCam : MonoBehaviour
 
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
+        StateHandler();
+        
+
         transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
         orientation.rotation = Quaternion.Euler(0, yRotation, 0);
 
 
+    }
+
+    public void StateHandler()
+    {
+        if (Input.GetKeyDown(leftLook))
+        {
+                yRotation -= 160f;
+        }
+        else if (Input.GetKeyUp(leftLook))
+        {
+            yRotation += 160f;
+        }
+        else if (Input.GetKeyDown(rightLook))
+        {
+            yRotation += 160f;
+        }
+        else if (Input.GetKeyUp(rightLook))
+        {
+            yRotation -= 160f;
+        }
     }
 }
