@@ -45,19 +45,19 @@ public class PlayerCam : MonoBehaviour
     {
         if (Input.GetKeyDown(leftLook))
         {
-                yRotation -= 160f;
+                yRotation -= 170f;
         }
         else if (Input.GetKeyUp(leftLook))
         {
-            yRotation += 160f;
+            yRotation += 170f;
         }
         else if (Input.GetKeyDown(rightLook))
         {
-            yRotation += 160f;
+            yRotation += 170f;
         }
         else if (Input.GetKeyUp(rightLook))
         {
-            yRotation -= 160f;
+            yRotation -= 170f;
         }
     }
 }

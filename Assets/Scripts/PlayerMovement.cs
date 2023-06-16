@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Keybinds")]
     public KeyCode sprintKey = KeyCode.LeftShift;
+    public KeyCode leftLook = KeyCode.Q;
+    public KeyCode rightLook = KeyCode.E;
 
     [Header("Ground Check")]
     public float playerHeight;
@@ -25,6 +27,8 @@ public class PlayerMovement : MonoBehaviour
     float verticalInput;
 
     Vector3 moveDirection;
+
+    bool lookingBackward;
 
     Rigidbody rb;
 
@@ -85,9 +89,29 @@ public class PlayerMovement : MonoBehaviour
 
     private void MovePlayer()
     {
-        moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+        if (Input.GetKey(leftLook) || Input.GetKey(rightLook))
+        {
+            lookingBackward = true;
+        }
+        else
+        {
+            lookingBackward = false;
+        }
 
-        rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+        if (lookingBackward)
+        {
+            moveDirection = -orientation.forward * verticalInput + (-orientation.right * horizontalInput);
+
+            rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+        }
+        else
+        {
+            moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+
+            rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+        }
+
+        
     }
 
     private void SpeedControl()
