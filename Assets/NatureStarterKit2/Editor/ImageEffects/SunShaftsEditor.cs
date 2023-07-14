@@ -1,4 +1,4 @@
-using System;
+/*using System;
 using UnityEditor;
 using UnityEngine;
 
@@ -62,7 +62,7 @@ namespace UnityStandardAssets.ImageEffects
 			else
 				(target as SunShafts).camera.depthTextureMode &= ~DepthTextureMode.Depth;
 		}
-		*/
+		
 
             EditorGUILayout.PropertyField (resolution,  new GUIContent("Resolution"));
             EditorGUILayout.PropertyField (screenBlendMode, new GUIContent("Blend mode"));
@@ -102,4 +102,4 @@ namespace UnityStandardAssets.ImageEffects
             serObj.ApplyModifiedProperties();
         }
     }
-}
+}*/

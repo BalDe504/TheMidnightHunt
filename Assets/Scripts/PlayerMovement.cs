@@ -132,7 +132,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(Input.GetKeyDown(Exit))
         {
-            SceneManager.LoadScene("Menu");
+            Application.Quit();
         }
         
     }

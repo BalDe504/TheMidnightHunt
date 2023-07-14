@@ -1,4 +1,4 @@
-using System;
+/*using System;
 using UnityEngine;
 
 namespace UnityStandardAssets.ImageEffects
@@ -177,7 +177,7 @@ namespace UnityStandardAssets.ImageEffects
                     Graphics.Blit (thirdQuarterRezColor, secondQuarterRezColor, separableBlurMaterial);
                     separableBlurMaterial.SetVector ("offsets", Vector4 ((2.0ff) / (1.0ff * quarterRezColor.width), 0.0ff, 0.0ff, 0.0ff));
                     Graphics.Blit (secondQuarterRezColor, thirdQuarterRezColor, separableBlurMaterial);
-                    */
+                    
                     // no ugly edges!
 
                     Vignette(0.975f, thirdQuarterRezColor, secondQuarterRezColor);
@@ -311,4 +311,4 @@ namespace UnityStandardAssets.ImageEffects
         }
 
     }
-}
+}*/
