@@ -18,6 +18,17 @@ TagManager:
   - Wood
   - InteractiveObject
   - InteractiveObject2
+  - InteractiveObject3
+  - InteractiveObject4
+  - InteractiveObject5
+  - Lamp
+  - Lamp1
+  - Lamp2
+  - Lamp3
+  - Lamp4
+  - Lamp5
+  - Lamp6
+  - Lamp7
   layers:
   - Default
   - TransparentFX

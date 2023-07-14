@@ -13,7 +13,7 @@ public class DoorRaycast : MonoBehaviour
 
     private MyDoorController2 raycastedObj2;
 
-    [SerializeField] private KeyCode openDoorKey = KeyCode.Mouse0;
+    [SerializeField] private KeyCode openDoorKey = KeyCode.F;
 
     [SerializeField] private Image crosshair = null;
     private bool isCrosshairActive;
@@ -91,7 +91,7 @@ public class DoorRaycast : MonoBehaviour
     {
         if (on && !doOnce)
         {
-            crosshair.color = Color.red;
+            crosshair.color = Color.yellow;
         }
         else
         {

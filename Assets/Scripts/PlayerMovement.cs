@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
     public KeyCode sprintKey = KeyCode.LeftShift;
     public KeyCode leftLook = KeyCode.Q;
     public KeyCode rightLook = KeyCode.E;
+
+    public KeyCode Exit = KeyCode.Escape;
 
     [Header("Ground Check")]
     public float playerHeight;
@@ -55,6 +58,7 @@ public class PlayerMovement : MonoBehaviour
         MyInput();
         SpeedControl();
         StateHandler();
+        QuitGame();
 
         if (grounded)
             rb.drag = groundDrag;
@@ -122,5 +126,14 @@ public class PlayerMovement : MonoBehaviour
             Vector3 limitedVel = flatVel.normalized * moveSpeed;
             rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
         }
+    }
+
+    public void QuitGame()
+    {
+        if(Input.GetKeyDown(Exit))
+        {
+            SceneManager.LoadScene("Menu");
+        }
+        
     }
 }
