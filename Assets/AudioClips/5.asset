@@ -10,8 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f2de14f7656347448a0ed66bff5e0fa4, type: 3}
-  m_Name: 1
+  m_Name: 5
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 6086cf86f55440141a3d462689f29e66, type: 3}
-  subtitle: It was a very good day for hiking. Unfortunatelly it's getting dark and
-    I lost my tent. I should find a place to sleep.
+  subtitle: Looks like the door is locked. Maybe there is a key somewhere...

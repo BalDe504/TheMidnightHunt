@@ -29,6 +29,7 @@ TagManager:
   - Lamp5
   - Lamp6
   - Lamp7
+  - Voice7
   layers:
   - Default
   - TransparentFX

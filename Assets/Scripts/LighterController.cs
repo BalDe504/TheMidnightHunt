@@ -15,7 +15,8 @@ public class LighterController : MonoBehaviour
     public GameObject Light5;
     public GameObject Light6;
     public GameObject Light7;
-    
+    public GameObject Voice7;
+
     public Light lightActive;
     public Light lightActive1;
     public Light lightActive2;
@@ -46,6 +47,7 @@ public class LighterController : MonoBehaviour
             Light5 = GameObject.FindGameObjectWithTag("Lamp5");
             Light6 = GameObject.FindGameObjectWithTag("Lamp6");
             Light7 = GameObject.FindGameObjectWithTag("Lamp7");
+            Voice7 = GameObject.FindGameObjectWithTag("Voice7");
 
             lightActive = Light.GetComponent<Light>();
             lightActive1 = Light1.GetComponent<Light>();
@@ -64,6 +66,8 @@ public class LighterController : MonoBehaviour
             lightActive5.enabled = false;
             lightActive6.enabled = false;
             lightActive7.enabled = false;
+
+            Voice7.GetComponent<Collider>().enabled = true;
 
         }
     }
