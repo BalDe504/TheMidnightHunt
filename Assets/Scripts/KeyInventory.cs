@@ -8,6 +8,7 @@ using UnityEngine;
         public bool hasFirstKey = false;
         public bool hasSecondKey = false;
     public bool hasLighter = false;
+    public bool enemyTriggered = false;
     }
 
 

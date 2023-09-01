@@ -18,6 +18,7 @@ public class KeyRaycast : MonoBehaviour
     private bool doOnce;
 
     private string interactableTag = "InteractiveObject4";
+    private string interactableTag2 = "EnemyDoors";
 
     private void Update()
     {
@@ -28,7 +29,7 @@ public class KeyRaycast : MonoBehaviour
 
         if (Physics.Raycast(transform.position, fwd, out hit, rayLenght, mask))
         {
-            if (hit.collider.CompareTag(interactableTag))
+            if (hit.collider.CompareTag(interactableTag) || hit.collider.CompareTag(interactableTag2))
             {
                 if (!doOnce)
                 {

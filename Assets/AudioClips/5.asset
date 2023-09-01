@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2de14f7656347448a0ed66bff5e0fa4, type: 3}
   m_Name: 5
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 6086cf86f55440141a3d462689f29e66, type: 3}
+  clip: {fileID: 8300000, guid: df0aa3be0c4c87348a63ad0eb1107ac6, type: 3}
   subtitle: Looks like the door is locked. Maybe there is a key somewhere...

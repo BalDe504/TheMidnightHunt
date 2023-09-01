@@ -30,6 +30,7 @@ TagManager:
   - Lamp6
   - Lamp7
   - Voice7
+  - EnemyDoors
   layers:
   - Default
   - TransparentFX
