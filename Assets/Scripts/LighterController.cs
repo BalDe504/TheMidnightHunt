@@ -6,7 +6,9 @@ public class LighterController : MonoBehaviour
 {
     [SerializeField] private KeyInventory _keyInventory = null;
     public GameObject hand;
-    
+
+    public GameObject JumpscareTrigger;
+
     public GameObject Light;
     public GameObject Light1;
     public GameObject Light2;
@@ -48,6 +50,7 @@ public class LighterController : MonoBehaviour
             Light6 = GameObject.FindGameObjectWithTag("Lamp6");
             Light7 = GameObject.FindGameObjectWithTag("Lamp7");
             Voice7 = GameObject.FindGameObjectWithTag("Voice7");
+            JumpscareTrigger = GameObject.FindGameObjectWithTag("Jumpscare1");
 
             lightActive = Light.GetComponent<Light>();
             lightActive1 = Light1.GetComponent<Light>();
@@ -68,6 +71,8 @@ public class LighterController : MonoBehaviour
             lightActive7.enabled = false;
 
             Voice7.GetComponent<Collider>().enabled = true;
+
+            JumpscareTrigger.GetComponent<Collider>().enabled = true;
 
         }
     }
