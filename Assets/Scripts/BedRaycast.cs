@@ -61,11 +61,11 @@ public class BedRaycast : MonoBehaviour
     {
         if (on && !doOnce)
         {
-            crosshair.color = Color.blue;
+            crosshair.color = Color.yellow;
         }
         else
         {
-            crosshair.color = Color.white;
+            crosshair.color = Color.clear;
             isCrosshairActive = false;
         }
     }

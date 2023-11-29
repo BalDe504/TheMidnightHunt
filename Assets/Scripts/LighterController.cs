@@ -28,6 +28,8 @@ public class LighterController : MonoBehaviour
     public Light lightActive6;
     public Light lightActive7;
 
+    public AudioSource ambience;
+
     public void ObjectInteraction()
     {
         
@@ -73,6 +75,8 @@ public class LighterController : MonoBehaviour
             Voice7.GetComponent<Collider>().enabled = true;
 
             JumpscareTrigger.GetComponent<Collider>().enabled = true;
+
+            ambience.enabled = false;
 
         }
     }

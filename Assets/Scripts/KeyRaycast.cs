@@ -64,7 +64,7 @@ public class KeyRaycast : MonoBehaviour
         }
         else
         {
-            crosshair.color = Color.white;
+            crosshair.color = Color.clear;
             isCrosshairActive = false;
         }
     }

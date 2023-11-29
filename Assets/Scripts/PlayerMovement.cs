@@ -37,6 +37,9 @@ public class PlayerMovement : MonoBehaviour
 
     public MovementState state;
 
+    public AudioSource footstepsWalk;
+    public AudioSource footstepsSprint;
+
     public enum MovementState
     {
         walking,
@@ -64,6 +67,35 @@ public class PlayerMovement : MonoBehaviour
             rb.drag = groundDrag;
         else
             rb.drag = 0;
+
+        if(state == MovementState.walking)
+        {
+            footstepsSprint.enabled = false;
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+            {
+                footstepsWalk.enabled = true;
+            }
+            else
+            {
+                footstepsWalk.enabled = false;
+            }
+        }
+        else if (state == MovementState.sprinting)
+        {
+            footstepsWalk.enabled = false;
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+            {
+                footstepsSprint.enabled = true;
+            }
+            else
+            {
+                footstepsSprint.enabled = false;
+            }
+        }
+        
+
+
+
     }
 
     private void FixedUpdate()
