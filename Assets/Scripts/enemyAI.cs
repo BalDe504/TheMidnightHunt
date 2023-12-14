@@ -146,5 +146,7 @@ public class enemyAI : MonoBehaviour
     {
         yield return new WaitForSeconds(jumpscareTime);
         SceneManager.LoadScene(deathScene);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 }

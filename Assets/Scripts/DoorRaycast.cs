@@ -95,7 +95,7 @@ public class DoorRaycast : MonoBehaviour
         }
         else
         {
-            crosshair.color = Color.clear;
+            crosshair.color = Color.white;
             isCrosshairActive = false;
         }
     }

@@ -63,7 +63,7 @@ public class LighterRaycast : MonoBehaviour
         }
         else
         {
-            crosshair.color = Color.clear;
+            crosshair.color = Color.white;
             isCrosshairActive = false;
         }
     }
