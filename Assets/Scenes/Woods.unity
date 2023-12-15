@@ -6788,7 +6788,11 @@ MonoBehaviour:
   player2: {fileID: 963194229}
   noteCanvas: {fileID: 649522753}
   noteTextAreaUI: {fileID: 1670089481}
-  noteText: WDASDWASDWASDwadadadadasdwasdwa
+  noteText: 'It was supposed to be a fun day hiking around these woods. Couple of
+    hours, no more, no less. But now we are COMPLETELY lost! I''m starting to panic,
+    but Nico constantly tells me that everything will be fine. I trust his survival
+    skills, but not when it''s pitch black outside. We spotted an abandoned house
+    nearby. We will try to spend the night there and try to find a way home tomorrow. '
   openEvent:
     m_PersistentCalls:
       m_Calls:
@@ -11311,7 +11315,9 @@ MonoBehaviour:
   player2: {fileID: 963194229}
   noteCanvas: {fileID: 649522753}
   noteTextAreaUI: {fileID: 1670089481}
-  noteText: JDJDJDJDJDJJDJD
+  noteText: "I can\u2019t believe that he just left me here alone! How am I supposed
+    to get home on my own? Three year of marriage and he abandoned me like that\u2026
+    We will have a serious talk when I see him again!"
   openEvent:
     m_PersistentCalls:
       m_Calls:
@@ -22706,7 +22712,12 @@ MonoBehaviour:
   player2: {fileID: 963194229}
   noteCanvas: {fileID: 649522753}
   noteTextAreaUI: {fileID: 1670089481}
-  noteText: JDJDJDJDJDJJDJD
+  noteText: "Nico is checking if nobody is here, but the house seems to be completely
+    empty. I am a little calmer now, but I still can\u2019t believe that we got lost.
+    Fortunately we have enough food and water to stay here for a night. There is
+    only one small bed here. Nico said that he can sleep in it, but that\u2019s good
+    for me. This bed is disgusting, dirty and old. I prefer to sleep on the floor
+    anyway\u2026 "
   openEvent:
     m_PersistentCalls:
       m_Calls:

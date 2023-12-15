@@ -827,7 +827,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 438518, guid: 759f41d0d03c01c42891d874400f8ffb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1579295
+      value: 1.001
       objectReference: {fileID: 0}
     - target: {fileID: 438518, guid: 759f41d0d03c01c42891d874400f8ffb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2295,7 +2295,10 @@ MonoBehaviour:
   player2: {fileID: 1873950823}
   noteCanvas: {fileID: 1679688965}
   noteTextAreaUI: {fileID: 1742360735}
-  noteText: JDJDJDJDJDJJDJD
+  noteText: "I didn\u2019t find this man yet, but I hear some strange noises coming
+    from the end of the hallway. Sounds like screaming of pain. Maybe this guy got
+    hurt? Or maybe it\u2019s Lisa and something happened to her?! I should investigate
+    it as soon as possible!"
   openEvent:
     m_PersistentCalls:
       m_Calls:
@@ -2381,7 +2384,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 179873104}
   m_LocalRotation: {x: -0, y: -0.4759118, z: -0, w: 0.87949306}
-  m_LocalPosition: {x: 184.552, y: 0.141, z: 294.205}
+  m_LocalPosition: {x: 184.572, y: 1.01, z: 294.138}
   m_LocalScale: {x: 0.2655815, y: 0.0071700583, z: 0.39888}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3837,7 +3840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4382071522870698, guid: 4ef4628f5f55fbd43b9fd014cc065b34, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1579294
+      value: 1.0016
       objectReference: {fileID: 0}
     - target: {fileID: 4382071522870698, guid: 4ef4628f5f55fbd43b9fd014cc065b34, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5897,6 +5900,63 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 515179545}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &517482150
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1043346862074072, guid: eeefdd9044a28504abd5e39c9e8fe5d0, type: 3}
+      propertyPath: m_Name
+      value: P_Med_box_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 4019922906343924, guid: eeefdd9044a28504abd5e39c9e8fe5d0, type: 3}
+      propertyPath: m_RootOrder
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4019922906343924, guid: eeefdd9044a28504abd5e39c9e8fe5d0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 184.523
+      objectReference: {fileID: 0}
+    - target: {fileID: 4019922906343924, guid: eeefdd9044a28504abd5e39c9e8fe5d0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.127
+      objectReference: {fileID: 0}
+    - target: {fileID: 4019922906343924, guid: eeefdd9044a28504abd5e39c9e8fe5d0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 294.069
+      objectReference: {fileID: 0}
+    - target: {fileID: 4019922906343924, guid: eeefdd9044a28504abd5e39c9e8fe5d0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.64622533
+      objectReference: {fileID: 0}
+    - target: {fileID: 4019922906343924, guid: eeefdd9044a28504abd5e39c9e8fe5d0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.64622533
+      objectReference: {fileID: 0}
+    - target: {fileID: 4019922906343924, guid: eeefdd9044a28504abd5e39c9e8fe5d0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.2870415
+      objectReference: {fileID: 0}
+    - target: {fileID: 4019922906343924, guid: eeefdd9044a28504abd5e39c9e8fe5d0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.2870415
+      objectReference: {fileID: 0}
+    - target: {fileID: 4019922906343924, guid: eeefdd9044a28504abd5e39c9e8fe5d0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4019922906343924, guid: eeefdd9044a28504abd5e39c9e8fe5d0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4019922906343924, guid: eeefdd9044a28504abd5e39c9e8fe5d0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 47.9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eeefdd9044a28504abd5e39c9e8fe5d0, type: 3}
 --- !u!1001 &530426457
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13533,7 +13593,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4019922906343924, guid: eeefdd9044a28504abd5e39c9e8fe5d0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.27953017
+      value: 0.124
       objectReference: {fileID: 0}
     - target: {fileID: 4019922906343924, guid: eeefdd9044a28504abd5e39c9e8fe5d0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15689,7 +15749,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4019922906343924, guid: eeefdd9044a28504abd5e39c9e8fe5d0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.27953017
+      value: 0.125
       objectReference: {fileID: 0}
     - target: {fileID: 4019922906343924, guid: eeefdd9044a28504abd5e39c9e8fe5d0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16158,7 +16218,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -16687,7 +16747,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 497050, guid: 8555b5e3674ee2a49b8206c8ce692744, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1579599
+      value: 0.999
       objectReference: {fileID: 0}
     - target: {fileID: 497050, guid: 8555b5e3674ee2a49b8206c8ce692744, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17535,7 +17595,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 456052, guid: 434417b606fbffd4da5311a70a4dd1da, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2
+      value: 1.0775
       objectReference: {fileID: 0}
     - target: {fileID: 456052, guid: 434417b606fbffd4da5311a70a4dd1da, type: 3}
       propertyPath: m_LocalPosition.z
@@ -18021,7 +18081,7 @@ PrefabInstance:
     - target: {fileID: 4071069836747969314, guid: 609cad5eb478dd849beaf2705286bdf7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1656
+      value: 1.0073
       objectReference: {fileID: 0}
     - target: {fileID: 4071069836747969314, guid: 609cad5eb478dd849beaf2705286bdf7,
         type: 3}
@@ -19420,7 +19480,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 446964, guid: 9d8dcfc962f6a894ca2095893a24cf07, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1579294
+      value: 1.006
       objectReference: {fileID: 0}
     - target: {fileID: 446964, guid: 9d8dcfc962f6a894ca2095893a24cf07, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20655,7 +20715,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4019922906343924, guid: eeefdd9044a28504abd5e39c9e8fe5d0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.27953017
+      value: 0.123
       objectReference: {fileID: 0}
     - target: {fileID: 4019922906343924, guid: eeefdd9044a28504abd5e39c9e8fe5d0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -21947,7 +22007,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 403816, guid: 80565fbeae15fa746956cf545776c7d6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1579294
+      value: 1.002
       objectReference: {fileID: 0}
     - target: {fileID: 403816, guid: 80565fbeae15fa746956cf545776c7d6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -22778,7 +22838,12 @@ MonoBehaviour:
   player2: {fileID: 1873950823}
   noteCanvas: {fileID: 1679688965}
   noteTextAreaUI: {fileID: 1742360735}
-  noteText: JDJDJDJDJDJJDJD
+  noteText: "Date: 24/06/1993r. | Subject: Alan Norris | Age: 26 | Experiment is
+    complete and looks like it\u2019s successful this time. Subject shows sudden
+    increase of muscle mass. It looks like he\u2019s growing steadily. Subject is
+    in incredible pain, but manages to endure. But something strange starts to happening.
+    I spotted something that resembles claws\u2026 I\u2019m putting it for further
+    investigation."
   openEvent:
     m_PersistentCalls:
       m_Calls:
@@ -24994,7 +25059,9 @@ MonoBehaviour:
   player2: {fileID: 1873950823}
   noteCanvas: {fileID: 1679688965}
   noteTextAreaUI: {fileID: 1742360735}
-  noteText: JDJDJDJDJDJJDJD
+  noteText: "I woke up in this strange place, but I can\u2019t see Lisa. What the
+    hell even happened? Why am I here instead of that old house? And what happened
+    to Lisa? I\u2019m seriously scared\u2026 I need to find Lisa and get out of here\u2026"
   openEvent:
     m_PersistentCalls:
       m_Calls:
@@ -25119,7 +25186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 491380, guid: 59b97e3a69ff1354e9d33792cf344de8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1579293
+      value: 0.999
       objectReference: {fileID: 0}
     - target: {fileID: 491380, guid: 59b97e3a69ff1354e9d33792cf344de8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -25853,7 +25920,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 412390, guid: 22f5407fceb4bb74b930f5f2b49aa876, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1579599
+      value: 1.0595
       objectReference: {fileID: 0}
     - target: {fileID: 412390, guid: 22f5407fceb4bb74b930f5f2b49aa876, type: 3}
       propertyPath: m_LocalPosition.z
@@ -26600,7 +26667,10 @@ MonoBehaviour:
   player2: {fileID: 1873950823}
   noteCanvas: {fileID: 1679688965}
   noteTextAreaUI: {fileID: 1742360735}
-  noteText: JDJDJDJDJDJJDJD
+  noteText: "I still didn\u2019t find Lisa, but I found this key. Maybe it opens
+    the door, behind which I saw someone walking around. I tried to call him, but
+    he didn\u2019t respond. I should find that man. Maybe he saw Lisa somewhere and
+    knows how to get out of here\u2026"
   openEvent:
     m_PersistentCalls:
       m_Calls:
@@ -26686,7 +26756,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114545169}
   m_LocalRotation: {x: -0, y: 0.040611465, z: -0, w: 0.999175}
-  m_LocalPosition: {x: 189.427, y: 1.165, z: 325.376}
+  m_LocalPosition: {x: 189.427, y: 1.009, z: 325.376}
   m_LocalScale: {x: 0.2655815, y: 0.0071700583, z: 0.39888}
   m_Children: []
   m_Father: {fileID: 0}
