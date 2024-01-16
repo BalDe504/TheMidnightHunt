@@ -3,29 +3,48 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.Services.Analytics;
 using Unity.Services.Core;
-using System;
+using Unity.Services.Core.Analytics;
+using UnityEngine.SceneManagement;
 
-public class AnalyticsEvent : MonoBehaviour
+public class UGS_Analytics : MonoBehaviour
 {
-    
     async void Start()
     {
-        await UnityServices.InitializeAsync();
+        try
+        {
+            await UnityServices.InitializeAsync();
+            GiveConsent(); // Get user consent according to various legislations
+            LevelCompletedCustomEvent();
+        }
+        catch (ConsentCheckException e)
+        {
+            Debug.Log(e.ToString());
+        }
     }
 
-    Dictionary<string, object> parameters = new Dictionary<string, object>()
+    private void LevelCompletedCustomEvent()
     {
-        { "String", "I need more bullets!" },
-    { "Int", 2137 },
-    { "Float", 0.451f },
-    { "Bool", true },
-    };
+        string currentLevel = SceneManager.GetActiveScene().name; // Gets a random number from 1-3
 
-    public void OnStart()
+        // Define Custom Parameters
+        Dictionary<string, object> parameters = new Dictionary<string, object>()
+        {
+            { "levelName", "Level: " + currentLevel}
+        };
+
+        // The ‘levelCompleted’ event will get cached locally
+        //and sent during the next scheduled upload, within 1 minute
+        AnalyticsService.Instance.CustomData("levelCompleted", parameters);
+
+        // You can call Events.Flush() to send the event immediately
+        AnalyticsService.Instance.Flush();
+    }
+
+    public void GiveConsent()
     {
-        string name = System.Environment.UserName;
-        parameters.Add("Name:", name);
-        AnalyticsService.Instance.CustomData("MyEvent", parameters);
-        Debug.Log(name);
+        // Call if consent has been given by the user
+        AnalyticsService.Instance.StartDataCollection();
+        Debug.Log($"Consent has been provided. The SDK is now collecting data!");
     }
 }
+
