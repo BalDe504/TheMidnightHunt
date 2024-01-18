@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using Unity.Services.Analytics;
+using Unity.Services.Core;
+using Unity.Services.Core.Analytics;
 using UnityEngine.SceneManagement;
 
 public class enemyAI : MonoBehaviour
@@ -144,9 +147,42 @@ public class enemyAI : MonoBehaviour
 
     IEnumerator deathRoutine()
     {
+        try
+        {
+            GiveConsent();
+            PickedNotes();
+        }
+        catch (ConsentCheckException e)
+        {
+            Debug.Log(e.ToString());
+        }
+
         yield return new WaitForSeconds(jumpscareTime);
         SceneManager.LoadScene(deathScene);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+    }
+
+    private void PickedNotes()
+    {
+
+
+        Dictionary<string, object> parameters = new Dictionary<string, object>()
+        {
+            {"notesNumber", "Player picked " + _keyInventory.NotesPicked + " notes in scene " + SceneManager.GetActiveScene().name}
+        };
+
+        AnalyticsService.Instance.CustomData("pickedNotes", parameters);
+
+        AnalyticsService.Instance.Flush();
+
+        Debug.Log(_keyInventory.NotesPicked);
+    }
+
+    public void GiveConsent()
+    {
+        // Call if consent has been given by the user
+        AnalyticsService.Instance.StartDataCollection();
+        Debug.Log($"Consent has been provided. The SDK is now collecting data!");
     }
 }

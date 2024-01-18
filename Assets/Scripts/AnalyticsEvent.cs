@@ -8,6 +8,10 @@ using UnityEngine.SceneManagement;
 
 public class UGS_Analytics : MonoBehaviour
 {
+    [SerializeField] private KeyInventory _keyInventory = null;
+
+    
+
     async void Start()
     {
         try
@@ -21,6 +25,8 @@ public class UGS_Analytics : MonoBehaviour
             Debug.Log(e.ToString());
         }
     }
+
+
 
     private void LevelCompletedCustomEvent()
     {

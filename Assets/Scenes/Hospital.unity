@@ -1987,6 +1987,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99f67588c31d7084f82546c9222fc25b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _keyInventory: {fileID: 659406280}
 --- !u!4 &141511864
 Transform:
   m_ObjectHideFlags: 0
@@ -2332,7 +2333,6 @@ GameObject:
   m_Component:
   - component: {fileID: 169456144}
   - component: {fileID: 169456143}
-  - component: {fileID: 169456142}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2340,14 +2340,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &169456142
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 169456141}
-  m_Enabled: 1
 --- !u!20 &169456143
 Camera:
   m_ObjectHideFlags: 0
@@ -2429,7 +2421,7 @@ GameObject:
   - component: {fileID: 179873105}
   m_Layer: 0
   m_Name: Note7
-  m_TagString: Untagged
+  m_TagString: Note7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2470,6 +2462,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _keyInventory: {fileID: 659406280}
 --- !u!65 &179873106
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8188,6 +8181,14 @@ MonoBehaviour:
   hasSecondKey: 0
   hasLighter: 0
   enemyTriggered: 0
+  NotesPicked: 0
+  Note1: 0
+  Note2: 0
+  Note3: 0
+  Note4: 0
+  Note5: 0
+  Note6: 0
+  Note7: 0
 --- !u!4 &659406281
 Transform:
   m_ObjectHideFlags: 0
@@ -12687,7 +12688,7 @@ GameObject:
   m_Component:
   - component: {fileID: 964962405}
   - component: {fileID: 964962407}
-  - component: {fileID: 964962406}
+  - component: {fileID: 964962408}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -12711,14 +12712,6 @@ Transform:
   - {fileID: 838285832}
   m_Father: {fileID: 994341094008543991}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!81 &964962406
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 964962404}
-  m_Enabled: 1
 --- !u!20 &964962407
 Camera:
   m_ObjectHideFlags: 0
@@ -12770,6 +12763,14 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!81 &964962408
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964962404}
+  m_Enabled: 1
 --- !u!65 &975365048
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24056,7 +24057,7 @@ GameObject:
   - component: {fileID: 1798149249}
   m_Layer: 0
   m_Name: Note5
-  m_TagString: Untagged
+  m_TagString: Note5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24099,6 +24100,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _keyInventory: {fileID: 659406280}
 --- !u!65 &1798149250
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26398,7 +26400,7 @@ GameObject:
   - component: {fileID: 1969682317}
   m_Layer: 0
   m_Name: Note4
-  m_TagString: Untagged
+  m_TagString: Note4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26438,6 +26440,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _keyInventory: {fileID: 659406280}
 --- !u!65 &1969682318
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26831,7 +26834,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2016306901}
   - component: {fileID: 2016306900}
-  - component: {fileID: 2016306899}
+  - component: {fileID: 2016306902}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -26839,14 +26842,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!81 &2016306899
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2016306898}
-  m_Enabled: 1
 --- !u!20 &2016306900
 Camera:
   m_ObjectHideFlags: 0
@@ -26914,6 +26909,14 @@ Transform:
   - {fileID: 1810306550237388963}
   m_Father: {fileID: 1075501939}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!81 &2016306902
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016306898}
+  m_Enabled: 1
 --- !u!1 &2024447399
 GameObject:
   m_ObjectHideFlags: 0
@@ -28126,7 +28129,7 @@ GameObject:
   - component: {fileID: 2114545170}
   m_Layer: 0
   m_Name: Note6
-  m_TagString: Untagged
+  m_TagString: Note6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28167,6 +28170,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _keyInventory: {fileID: 659406280}
 --- !u!65 &2114545171
 BoxCollider:
   m_ObjectHideFlags: 0

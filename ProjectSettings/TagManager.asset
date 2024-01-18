@@ -32,6 +32,13 @@ TagManager:
   - Voice7
   - EnemyDoors
   - Jumpscare1
+  - Note1
+  - Note2
+  - Note3
+  - Note4
+  - Note5
+  - Note6
+  - Note7
   layers:
   - Default
   - TransparentFX

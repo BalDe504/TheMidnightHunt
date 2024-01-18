@@ -7254,7 +7254,7 @@ GameObject:
   - component: {fileID: 199493763}
   m_Layer: 0
   m_Name: Note1
-  m_TagString: Untagged
+  m_TagString: Note1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7296,6 +7296,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _keyInventory: {fileID: 259934571}
 --- !u!65 &199493764
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9593,6 +9594,62 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f62058cb710fd1745a24102fff0edd46, type: 3}
+--- !u!1 &259934570
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 259934572}
+  - component: {fileID: 259934571}
+  m_Layer: 0
+  m_Name: KeyInventory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &259934571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259934570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8939010958b62f24798143602ec7bbdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasFirstKey: 0
+  hasSecondKey: 0
+  hasLighter: 0
+  enemyTriggered: 0
+  NotesPicked: 0
+  Note1: 0
+  Note2: 0
+  Note3: 0
+  Note4: 0
+  Note5: 0
+  Note6: 0
+  Note7: 0
+--- !u!4 &259934572
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259934570}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 996.02094, y: 439.91046, z: -4.6096277}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &260923992
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12117,7 +12174,7 @@ GameObject:
   - component: {fileID: 332721944}
   m_Layer: 0
   m_Name: Note3
-  m_TagString: Untagged
+  m_TagString: Note3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12157,6 +12214,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _keyInventory: {fileID: 259934571}
 --- !u!65 &332721945
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24322,7 +24380,7 @@ GameObject:
   - component: {fileID: 699842672}
   m_Layer: 0
   m_Name: Note2
-  m_TagString: Untagged
+  m_TagString: Note2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24365,6 +24423,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _keyInventory: {fileID: 259934571}
 --- !u!65 &699842673
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47205,6 +47264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99f67588c31d7084f82546c9222fc25b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _keyInventory: {fileID: 259934571}
 --- !u!4 &1270713440
 Transform:
   m_ObjectHideFlags: 0
@@ -82056,6 +82116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 740ba2652a57d22428882f04205f3704, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _keyInventory: {fileID: 259934571}
 --- !u!4 &713272811953364796
 Transform:
   m_ObjectHideFlags: 0
@@ -83833,3 +83894,4 @@ SceneRoots:
   - {fileID: 699842676}
   - {fileID: 332721948}
   - {fileID: 1270713440}
+  - {fileID: 259934572}
