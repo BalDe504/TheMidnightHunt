@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using System;
+using System.Diagnostics;
+using System.Threading;
 
     public class KeyItemController : MonoBehaviour
     {
@@ -15,10 +18,11 @@ using UnityEngine.Events;
         private KeyDoorController doorObject;
 
         [SerializeField] private UnityEvent openEvent;
-
-    private void Start()
+    public Stopwatch timer = new Stopwatch();
+    public void Start()
         {
-            if (firstDoor)
+    timer.Start();
+        if (firstDoor)
             {
                 doorObject = GetComponent<KeyDoorController>();
             }
@@ -41,8 +45,14 @@ using UnityEngine.Events;
             {
                 _keyInventory.hasFirstKey = true;
                 gameObject.SetActive(false);
-                openEvent.Invoke();
-            }
+            openEvent.Invoke();
+            timer.Stop();
+            TimeSpan ts = timer.Elapsed;
+            _keyInventory.firstKeyTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
+            ts.Hours, ts.Minutes, ts.Seconds,
+            ts.Milliseconds / 10);
+            timer.Reset();
+        }
 
         if (secondDoor && _keyInventory.hasSecondKey)
         {
@@ -54,6 +64,11 @@ using UnityEngine.Events;
             _keyInventory.hasSecondKey = true;
             gameObject.SetActive(false);
             openEvent.Invoke();
+            timer.Stop();
+            TimeSpan ts = timer.Elapsed;
+            _keyInventory.secondKeyTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
+            ts.Hours, ts.Minutes, ts.Seconds,
+            ts.Milliseconds / 10);
         }
     }
 

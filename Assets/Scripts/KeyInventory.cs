@@ -23,6 +23,10 @@ using UnityEngine;
         public bool Note5 = false;
         public bool Note6 = false;
         public bool Note7 = false;
+
+    //czas na podniesienie klucza
+        public string firstKeyTime;
+        public string secondKeyTime;
 }
 
 

@@ -15,8 +15,8 @@ public class MyBedController : MonoBehaviour
     {
         try
         {
-            GiveConsent();
             PickedNotes();
+            LevelCompletedCustomEvent();
         }
         catch (ConsentCheckException e)
         {
@@ -43,10 +43,17 @@ public class MyBedController : MonoBehaviour
         Debug.Log(_keyInventory.NotesPicked);
     }
 
-    public void GiveConsent()
+    private void LevelCompletedCustomEvent()
     {
-        // Call if consent has been given by the user
-        AnalyticsService.Instance.StartDataCollection();
-        Debug.Log($"Consent has been provided. The SDK is now collecting data!");
+        string currentLevel = SceneManager.GetActiveScene().name;
+
+        Dictionary<string, object> parameters = new Dictionary<string, object>()
+        {
+            { "levelName", "Level: " + currentLevel}
+        };
+
+        AnalyticsService.Instance.CustomData("levelCompleted", parameters);
+
+        AnalyticsService.Instance.Flush();
     }
 }

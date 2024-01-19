@@ -149,8 +149,9 @@ public class enemyAI : MonoBehaviour
     {
         try
         {
-            GiveConsent();
             PickedNotes();
+            KeysTimer();
+            LevelCompletedCustomEvent();
         }
         catch (ConsentCheckException e)
         {
@@ -163,6 +164,20 @@ public class enemyAI : MonoBehaviour
         Cursor.visible = true;
     }
 
+    private void KeysTimer()
+    {
+
+
+        Dictionary<string, object> parameters = new Dictionary<string, object>()
+        {
+            {"keysTime", "Player found first key in: " + _keyInventory.firstKeyTime + " and second key in: " + _keyInventory.secondKeyTime}
+        };
+
+        AnalyticsService.Instance.CustomData("keysTimer", parameters);
+        Debug.Log(_keyInventory.firstKeyTime);
+        Debug.Log(_keyInventory.secondKeyTime);
+    }
+
     private void PickedNotes()
     {
 
@@ -173,16 +188,20 @@ public class enemyAI : MonoBehaviour
         };
 
         AnalyticsService.Instance.CustomData("pickedNotes", parameters);
+    }
+
+    private void LevelCompletedCustomEvent()
+    {
+        string currentLevel = SceneManager.GetActiveScene().name;
+
+        Dictionary<string, object> parameters = new Dictionary<string, object>()
+        {
+            { "levelName", "Level: " + currentLevel}
+        };
+
+        AnalyticsService.Instance.CustomData("levelCompleted", parameters);
 
         AnalyticsService.Instance.Flush();
-
-        Debug.Log(_keyInventory.NotesPicked);
     }
 
-    public void GiveConsent()
-    {
-        // Call if consent has been given by the user
-        AnalyticsService.Instance.StartDataCollection();
-        Debug.Log($"Consent has been provided. The SDK is now collecting data!");
-    }
 }
